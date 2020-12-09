@@ -1,3 +1,5 @@
+"use strict";
+
 exports.new = function(label) {
   return function() {
     return new TextDecoder(label);
