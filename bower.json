@@ -17,7 +17,7 @@
   "dependencies": {
     "purescript-prelude": "master",
     "purescript-effect": "master",
-    "purescript-arraybuffer-types": "master",
+    "purescript-arraybuffer-types": "main",
     "purescript-newtype": "master"
   }
 }
