@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/purescript-web/purescript-web-encoding.git"
+    "url": "https://github.com/purescript-web/purescript-web-encoding.git"
   },
   "ignore": [
     "**/.*",
@@ -15,9 +15,9 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-prelude": "master",
-    "purescript-effect": "master",
-    "purescript-arraybuffer-types": "main",
-    "purescript-newtype": "master"
+    "purescript-arraybuffer-types": "^3.0.0",
+    "purescript-effect": "^3.0.0",
+    "purescript-newtype": "^4.0.0",
+    "purescript-prelude": "^5.0.0"
   }
 }
