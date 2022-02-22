@@ -1,11 +1,11 @@
 "use strict";
 
-exports.new = function(label) {
+export function new(label) {
   return function() {
     return new TextDecoder(label);
   };
-};
+}
 
-exports._decode = function(view, options, decoder) {
+export function _decode(view, options, decoder) {
   return decoder.decode(view, options);
-};
+}
