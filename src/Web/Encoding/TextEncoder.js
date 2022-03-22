@@ -1,16 +1,15 @@
-"use strict";
-
-exports.new = function() {
+const newImpl = function() {
   return new TextEncoder();
 };
+export { newImpl as new };
 
-exports.encode = function(text) {
+export function encode(text) {
   return function(encoder) {
     return encoder.encode(text);
   };
-};
+}
 
-exports.encodeInto = function(text) {
+export function encodeInto(text) {
   return function(view) {
     return function(encoder) {
       return function() {
@@ -18,4 +17,4 @@ exports.encodeInto = function(text) {
       };
     };
   };
-};
+}

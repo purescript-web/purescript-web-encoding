@@ -1,11 +1,10 @@
-"use strict";
-
-exports.new = function(label) {
+const newImpl = function (label) {
   return function() {
     return new TextDecoder(label);
   };
 };
+export { newImpl as new };
 
-exports._decode = function(view, options, decoder) {
+export function _decode(view, options, decoder) {
   return decoder.decode(view, options);
-};
+}
