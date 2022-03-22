@@ -1,5 +1,3 @@
-"use strict";
-
 export function new(label) {
   return function() {
     return new TextDecoder(label);
