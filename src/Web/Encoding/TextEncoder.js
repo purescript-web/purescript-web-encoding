@@ -1,6 +1,7 @@
-export function new() {
+const newImpl = function() {
   return new TextEncoder();
-}
+};
+export { newImpl as new };
 
 export function encode(text) {
   return function(encoder) {
