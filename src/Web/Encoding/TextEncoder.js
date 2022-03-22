@@ -1,16 +1,16 @@
 "use strict";
 
-exports.new = function() {
+export function new() {
   return new TextEncoder();
-};
+}
 
-exports.encode = function(text) {
+export function encode(text) {
   return function(encoder) {
     return encoder.encode(text);
   };
-};
+}
 
-exports.encodeInto = function(text) {
+export function encodeInto(text) {
   return function(view) {
     return function(encoder) {
       return function() {
@@ -18,4 +18,4 @@ exports.encodeInto = function(text) {
       };
     };
   };
-};
+}
