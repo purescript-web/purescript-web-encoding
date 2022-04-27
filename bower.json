@@ -15,9 +15,9 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-arraybuffer-types": "main",
-    "purescript-effect": "master",
-    "purescript-newtype": "master",
-    "purescript-prelude": "master"
+    "purescript-arraybuffer-types": "^3.0.2",
+    "purescript-effect": "^4.0.0",
+    "purescript-newtype": "^5.0.0",
+    "purescript-prelude": "^6.0.0"
   }
 }
