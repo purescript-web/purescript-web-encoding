@@ -1,5 +1,5 @@
 const newImpl = function (label) {
-  return function() {
+  return function () {
     return new TextDecoder(label);
   };
 };
